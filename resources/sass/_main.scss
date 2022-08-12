@@ -1,0 +1,91 @@
+.flexcenter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.header {
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        display: flex;
+        justify-content: center;
+    }
+}
+.main {
+    min-height: 500px;
+}
+.logo {
+    max-width: 20em;
+    margin: 0 0 20px 0;
+}
+.content {
+    border: solid;
+    border-color: $lightpink;
+    border-radius: 5em;
+    padding: 2% 8% 2% 8%;
+    margin-bottom: 5%;
+}
+
+.btn-blue {
+    color: $white;
+    background-color: $purple;
+    border-color: $blue;
+}
+
+.btn-pink {
+    color: $pink;
+    background-color: $white;
+    border-color: $gray;
+}
+
+.btn-pink:hover {
+    color: $pink;
+    background-color: $secondary;
+}
+
+.card {
+    border-radius: 1em;
+    border: solid;
+    border-color: $pink;
+}
+
+.card-title {
+    padding: 1%;
+    border-radius: 0.8em 0.8em 0 0;
+    color: $pink;
+    background-color: $lightpink;
+    margin: 0;
+}
+
+.bg-primary {
+    background-color: $pink !important;
+}
+
+.bg-dark {
+    background-color: $gray !important;
+}
+
+.lists {
+    min-height: 640px;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    background-color: #fff;
+    border: 1px solid $lightpink;
+}
+
+.form-check {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    &-label {
+        text-align: center;
+        padding: 1%;
+    }
+}

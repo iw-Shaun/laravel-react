@@ -2,18 +2,57 @@
 $body-bg: #f8fafc;
 
 // Typography
-$font-family-sans-serif: 'Nunito', sans-serif;
+$font-family-sans-serif: "Nunito", sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
 // Colors
-$blue: #3490dc;
+// $blue: #3490dc;
 $indigo: #6574cd;
-$purple: #9561e2;
-$pink: #f66d9b;
+// $purple: #9561e2;
+// $pink: #f66d9b;
 $red: #e3342f;
 $orange: #f6993f;
 $yellow: #ffed4a;
 $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
+
+//企業用色
+$pink: #e25371;
+$lightpink: #f7c7c6;
+$purple: #7f71b2;
+$blue: #91acda;
+$gray: #cbcbcb;
+$secondary: #efefef;
+$white: #ffffff;
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+}
+
+select {
+    padding: 1%;
+}
+
+textarea {
+    width: 200px;
+    min-height: 100px;
+    padding: 0;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 7em;
+    // position: absolute;
+    bottom: 0;
+}

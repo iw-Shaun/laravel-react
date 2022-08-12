@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import LOGO from "../../../public/images/c橫式編排.png";
 
-class Home extends React.Component {
+class ShowAll extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -142,4 +142,4 @@ class Home extends React.Component {
     }
 }
 
-export default Home;
+export default ShowAll;

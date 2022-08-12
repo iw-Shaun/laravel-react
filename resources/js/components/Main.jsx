@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-class Add extends React.Component {
+class Main extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -14,9 +14,9 @@ class Add extends React.Component {
         return (
             <div className="container mt-4">
                 <div className="row justify-content-center">
-                    <div className="col-md-8">
+                    <div className="col-md-10">
                         <div className="card">
-                            <div className="card-header">Add Component</div>
+                            <div className="card-header">Main Component</div>
 
                             <div className="card-body">
                                 <form>
@@ -48,4 +48,4 @@ class Add extends React.Component {
     }
 }
 
-export default Add;
+export default Main;
