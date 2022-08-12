@@ -18,7 +18,7 @@ function Index() {
             <div className="full-height">
                 <Navbar></Navbar>
                 <Switch>
-                    <Route path="/" exact component={History} />
+                    <Route path="/" exact component={Create} />
                     <Route path="/home" exact component={Home} />
                     <Route path="/main" exact component={Main} />
                     <Route path="/create" exact component={Create} />
