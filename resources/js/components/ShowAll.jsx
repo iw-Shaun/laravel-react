@@ -26,9 +26,9 @@ class ShowAll extends React.Component {
     render() {
         return (
             <div className="warp container mt-2">
-                <div class="header">
-                    <img src={LOGO} alt="" class="logo" />
-                    <div class="content mb-4">
+                <div className="header">
+                    <img src={LOGO} alt="" className="logo" />
+                    <div className="content mb-4">
                         <h1>填報說明</h1>
                         Remember, you should run the npm run dev command each
                         time you change a Vue component. Or, you may run the npm

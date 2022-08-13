@@ -8,12 +8,12 @@ class History extends React.Component {
     render() {
         return (
             <div className="container mt-2">
-                <div class="header">
-                    <img src={LOGO} alt="" class="logo" />
+                <div className="header">
+                    <img src={LOGO} alt="" className="logo" />
                 </div>
 
                 <div className="col-md-12 mb-4">
-                    <table class="table">
+                    <table className="table">
                         <thead>
                             <tr>
                                 <th scope="col">專案名稱</th>
@@ -41,7 +41,7 @@ class History extends React.Component {
                             </tr>
                             <tr>
                                 <th scope="row">3</th>
-                                <td colspan="2">Larry the Bird</td>
+                                <td colSpan="2">Larry the Bird</td>
                                 <td>@twitter</td>
                             </tr>
                         </tbody>

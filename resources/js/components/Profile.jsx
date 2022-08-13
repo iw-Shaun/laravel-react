@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-class Main extends React.Component {
+class Profile extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -48,4 +48,4 @@ class Main extends React.Component {
     }
 }
 
-export default Main;
+export default Profile;

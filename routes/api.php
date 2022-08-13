@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/contacts','ContactController@index');
-Route::post('/contact/create','ContactController@create');
-Route::get('/contact/{id}/edit','ContactController@edit');
-Route::put('/contact/{id}/update','ContactController@update');
-Route::delete('/contact/{id}/delete','ContactController@delete');
+Route::get('/contacts','ContactsController@index');
+Route::post('/contact/create','ContactsController@create');
+Route::get('/contact/{id}/edit','ContactsController@edit');
+Route::put('/contact/{id}/update','ContactsController@update');
+Route::delete('/contact/{id}/delete','ContactsController@delete');

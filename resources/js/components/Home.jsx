@@ -5,30 +5,12 @@ import axios from "axios";
 import LOGO from "../../../public/images/c橫式編排.png";
 
 class Home extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            contacts: [],
-        };
-    }
-
-    componentDidMount() {
-        axios
-            .get("/api/contacts")
-            .then((response) => {
-                this.setState({
-                    contacts: response.data,
-                });
-            })
-            .catch((err) => console.log(err));
-    }
-
     render() {
         return (
             <div className="warp container mt-2">
-                <div class="header">
-                    <img src={LOGO} alt="" class="logo" />
-                    <div class="content mb-4">
+                <div className="header">
+                    <img src={LOGO} alt="" className="logo" />
+                    <div className="content mb-4">
                         <h1>填報說明</h1>
                         Remember, you should run the npm run dev command each
                         time you change a Vue component. Or, you may run the npm
@@ -46,19 +28,19 @@ class Home extends React.Component {
                         <div className="container">
                             {/* 下拉式選單 */}
                             <section className="mt-3 mb-3">
-                                <select class="btn btn-pink col-md-4">
+                                <select className="btn btn-pink col-md-4">
                                     <option selected>選擇專案</option>
                                     <option value="1">SGK</option>
                                     <option value="2">ALS</option>
                                     <option value="3">VAS</option>
                                 </select>
-                                <select class="btn btn-pink col-md-4">
+                                <select className="btn btn-pink col-md-4">
                                     <option selected>選擇工作類別</option>
                                     <option value="1">前端</option>
                                     <option value="2">後端</option>
                                     <option value="3">企劃</option>
                                 </select>
-                                <select class="btn btn-pink col-md-4">
+                                <select className="btn btn-pink col-md-4">
                                     <option selected>選擇進度</option>
                                     <option value="1">進行中</option>
                                     <option value="2">已完成</option>
@@ -68,58 +50,35 @@ class Home extends React.Component {
 
                             {/* 第二行 */}
                             <section>
-                                <div class="input-group mb-3 mr-2">
-                                    <span class="input-group-text">
+                                <div className="input-group mb-3 mr-2">
+                                    <span className="input-group-text">
                                         耗時(hr)
                                     </span>
                                     <input
                                         type="text"
-                                        class="form-control"
+                                        className="form-control"
                                         aria-label="Amount (to the nearest dollar)"
                                     />
                                 </div>
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text">日期</span>
+                                <div className="input-group mb-3">
+                                    <span className="input-group-text">日期</span>
                                     <input
                                         type="text"
-                                        class="form-control"
+                                        className="form-control"
                                         aria-label="Amount (to the nearest dollar)"
                                     />
                                 </div>
                             </section>
 
                             {/* 工作內容 */}
-                            <div class="input-group mb-3">
-                                <span class="input-group-text">工作內容</span>
+                            <div className="input-group mb-3">
+                                <span className="input-group-text">工作內容</span>
                                 <textarea
-                                    class="form-control"
+                                    className="form-control"
                                     aria-label="With textarea"
                                 ></textarea>
                             </div>
                         </div>
-
-                        {/* <div className="card-body">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Name</th>
-                                        <th scope="col">Phone</th>
-                                        <th scope="col">Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {this.state.contacts !== null
-                                        ? this.state.contacts.map((contact) => (
-                                              <tr key={contact.id}>
-                                                  <td>{contact.name}</td>
-                                                  <td>{contact.tel}</td>
-                                                  <td></td>
-                                              </tr>
-                                          ))
-                                        : null}
-                                </tbody>
-                            </table>
-                        </div> */}
                     </div>
                     {/* 按鈕 */}
                     <div className="flexcenter mt-3 mb-3">

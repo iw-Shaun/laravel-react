@@ -1,16 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Home from "./components/Home";
-import Main from "./components/Main";
-import Add from "./components/Add";
-import Edit from "./components/Edit";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Home from "./components/Home";
+import Profile from "./components/Profile";
+import ShowAll from "./components/ShowAll";
+import Create from "./components/Create";
 import Subscription from "./components/Subscription";
 import History from "./components/History";
-import Create from "./components/Create";
-import ShowAll from "./components/ShowAll";
+
+import Test from "./components/Test";
+import Add from "./components/Add";
+import Edit from "./components/Edit";
 
 function Index() {
     return (
@@ -18,13 +20,15 @@ function Index() {
             <div className="full-height">
                 <Navbar></Navbar>
                 <Switch>
-                    <Route path="/" exact component={Create} />
+                    <Route path="/" exact component={Home} />
                     <Route path="/home" exact component={Home} />
-                    <Route path="/main" exact component={Main} />
-                    <Route path="/create" exact component={Create} />
+                    <Route path="/profile" exact component={Profile} />
                     <Route path="/showAll" exact component={ShowAll} />
-                    <Route path="/history" exact component={History} />
+                    <Route path="/create" exact component={Create} />
                     <Route path="/sub" exact component={Subscription} />
+                    <Route path="/history" exact component={History} />
+
+                    <Route path="/test" exact component={Test} />
                     <Route path="/add" exact component={Add} />
                     <Route path="/:id/edit" exact component={Edit} />
                 </Switch>

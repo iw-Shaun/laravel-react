@@ -26,9 +26,9 @@ class Create extends React.Component {
     render() {
         return (
             <div className="warp container mt-2">
-                <div class="header">
-                    <img src={LOGO} alt="" class="logo" />
-                    <div class="content mb-4">
+                <div className="header">
+                    <img src={LOGO} alt="" className="logo" />
+                    <div className="content mb-4">
                         <h1>填報說明</h1>
                         Remember, you should run the npm run dev command each
                         time you change a Vue component. Or, you may run the npm
@@ -46,23 +46,23 @@ class Create extends React.Component {
                         <div className="container">
                             {/* 第二行 */}
                             <section className="mt-3">
-                                <div class="input-group mb-3 mr-2">
-                                    <span class="input-group-text">
+                                <div className="input-group mb-3 mr-2">
+                                    <span className="input-group-text">
                                         專案名稱
                                     </span>
                                     <input
                                         type="text"
-                                        class="form-control"
+                                        className="form-control"
                                         aria-label="Amount (to the nearest dollar)"
                                     />
                                 </div>
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text">
+                                <div className="input-group mb-3">
+                                    <span className="input-group-text">
                                         新增工作類別
                                     </span>
                                     <input
                                         type="text"
-                                        class="form-control"
+                                        className="form-control"
                                         aria-label="Amount (to the nearest dollar)"
                                     />
                                     <button
@@ -75,86 +75,86 @@ class Create extends React.Component {
                             </section>
 
                             {/* 工作內容 */}
-                            <div class="mb-3">
-                                <span class="input-group-text">工作類別</span>
+                            <div className="mb-3">
+                                <span className="input-group-text">工作類別</span>
                                 <div className="container flexcenter">
-                                    <div class="form-check">
+                                    <div className="form-check">
                                         <input
                                             type="checkbox"
                                             value=""
                                             id="flexCheckDefault"
                                         />
-                                        <label class="form-check-label">
+                                        <label className="form-check-label">
                                             Default checkbox
                                         </label>
                                     </div>
-                                    <div class="form-check">
+                                    <div className="form-check">
                                         <input
                                             type="checkbox"
                                             value=""
                                             id="flexCheckDefault"
                                         />
-                                        <label class="form-check-label">
+                                        <label className="form-check-label">
                                             Default checkbox
                                         </label>
                                     </div>
-                                    <div class="form-check">
+                                    <div className="form-check">
                                         <input
                                             type="checkbox"
                                             value=""
                                             id="flexCheckDefault"
                                         />
-                                        <label class="form-check-label">
+                                        <label className="form-check-label">
                                             Default checkbox
                                         </label>
                                     </div>
-                                    <div class="form-check">
+                                    <div className="form-check">
                                         <input
                                             type="checkbox"
                                             value=""
                                             id="flexCheckDefault"
                                         />
-                                        <label class="form-check-label">
+                                        <label className="form-check-label">
                                             Default checkbox
                                         </label>
                                     </div>
-                                    <div class="form-check">
+                                    <div className="form-check">
                                         <input
                                             type="checkbox"
                                             value=""
                                             id="flexCheckDefault"
                                         />
-                                        <label class="form-check-label">
+                                        <label className="form-check-label">
                                             Default checkbox
                                         </label>
                                     </div>
-                                    <div class="form-check">
+                                    <div className="form-check">
                                         <input
                                             type="checkbox"
                                             value=""
                                             id="flexCheckDefault"
                                         />
-                                        <label class="form-check-label">
+                                        <label className="form-check-label">
                                             Default checkbox
                                         </label>
                                     </div>
-                                    <div class="form-check">
+                                    <div className="form-check">
                                         <input
                                             type="checkbox"
                                             value=""
                                             id="flexCheckDefault"
                                         />
-                                        <label class="form-check-label">
+                                        <label className="form-check-label">
                                             Default checkbox
                                         </label>
                                     </div>
-                                    <div class="form-check">
+                                    <div className="form-check">
                                         <input
                                             type="checkbox"
                                             value=""
                                             id="flexCheckDefault"
                                         />
-                                        <label class="form-check-label">
+                                        <label className="form-check-label">
                                             Default checkbox
                                         </label>
                                     </div>

@@ -19,23 +19,23 @@ class Subscription extends React.Component {
                 <section>
                     <div className="col-md-3 mb-4 mt-3">
                         {/* title */}
-                        <img src={LOGO} alt="" class="logo col-md-3" />
+                        <img src={LOGO} alt="" className="logo col-md-3" />
                         <div className="card lists">
                             <div className="card-title text-center">
                                 <h2>成員列表</h2>
                             </div>
                             <div>
-                                <ul class="list-group">
-                                    <li class="list-group-item">
+                                <ul className="list-group">
+                                    <li className="list-group-item">
                                         A second item
                                     </li>
-                                    <li class="list-group-item">
+                                    <li className="list-group-item">
                                         A third item
                                     </li>
-                                    <li class="list-group-item">
+                                    <li className="list-group-item">
                                         A fourth item
                                     </li>
-                                    <li class="list-group-item">
+                                    <li className="list-group-item">
                                         And a fifth one
                                     </li>
                                 </ul>
@@ -44,8 +44,8 @@ class Subscription extends React.Component {
                     </div>
 
                     <div className="col-md-9 mt-3 mb-4">
-                        <div class="header">
-                            <div class="content mb-4">
+                        <div className="header">
+                            <div className="content mb-4">
                                 <h1>訂閱說明</h1>
                                 Remember, you should run the npm run dev command
                                 each time you change a Vue component. Or, you
@@ -61,83 +61,83 @@ class Subscription extends React.Component {
                             </div>
 
                             <div className="container flexcenter">
-                                <div class="form-check">
+                                <div className="form-check">
                                     <input
                                         type="checkbox"
                                         value=""
                                         id="flexCheckDefault"
                                     />
-                                    <label class="form-check-label">
+                                    <label className="form-check-label">
                                         Default checkbox
                                     </label>
                                 </div>
-                                <div class="form-check">
+                                <div className="form-check">
                                     <input
                                         type="checkbox"
                                         value=""
                                         id="flexCheckDefault"
                                     />
-                                    <label class="form-check-label">
+                                    <label className="form-check-label">
                                         Default checkbox
                                     </label>
                                 </div>
-                                <div class="form-check">
+                                <div className="form-check">
                                     <input
                                         type="checkbox"
                                         value=""
                                         id="flexCheckDefault"
                                     />
-                                    <label class="form-check-label">
+                                    <label className="form-check-label">
                                         Default checkbox
                                     </label>
                                 </div>
-                                <div class="form-check">
+                                <div className="form-check">
                                     <input
                                         type="checkbox"
                                         value=""
                                         id="flexCheckDefault"
                                     />
-                                    <label class="form-check-label">
+                                    <label className="form-check-label">
                                         Default checkbox
                                     </label>
                                 </div>
-                                <div class="form-check">
+                                <div className="form-check">
                                     <input
                                         type="checkbox"
                                         value=""
                                         id="flexCheckDefault"
                                     />
-                                    <label class="form-check-label">
+                                    <label className="form-check-label">
                                         Default checkbox
                                     </label>
                                 </div>
-                                <div class="form-check">
+                                <div className="form-check">
                                     <input
                                         type="checkbox"
                                         value=""
                                         id="flexCheckDefault"
                                     />
-                                    <label class="form-check-label">
+                                    <label className="form-check-label">
                                         Default checkbox
                                     </label>
                                 </div>
-                                <div class="form-check">
+                                <div className="form-check">
                                     <input
                                         type="checkbox"
                                         value=""
                                         id="flexCheckDefault"
                                     />
-                                    <label class="form-check-label">
+                                    <label className="form-check-label">
                                         Default checkbox
                                     </label>
                                 </div>
-                                <div class="form-check">
+                                <div className="form-check">
                                     <input
                                         type="checkbox"
                                         value=""
                                         id="flexCheckDefault"
                                     />
-                                    <label class="form-check-label">
+                                    <label className="form-check-label">
                                         Default checkbox
                                     </label>
                                 </div>
