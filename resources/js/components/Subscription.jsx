@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Link } from "react-router-dom";
-import axios from "axios";
 import LOGO from "../../../public/images/c橫式編排.png";
 
 class Subscription extends React.Component {
@@ -15,16 +14,15 @@ class Subscription extends React.Component {
 
     render() {
         return (
-            <div className="container mt-2">
+            <div className="container">
                 <section>
                     <div className="col-md-3 mb-4 mt-3">
                         {/* title */}
                         <img src={LOGO} alt="" className="logo col-md-3" />
-                        <div className="card lists">
+                        <div className="card">
                             <div className="card-title text-center">
                                 <h2>成員列表</h2>
                             </div>
-                            <div>
                                 <ul className="list-group">
                                     <li className="list-group-item">
                                         A second item
@@ -39,7 +37,6 @@ class Subscription extends React.Component {
                                         And a fifth one
                                     </li>
                                 </ul>
-                            </div>
                         </div>
                     </div>
 
@@ -60,7 +57,7 @@ class Subscription extends React.Component {
                                 <h2>訂閱總覽</h2>
                             </div>
 
-                            <div className="container flexcenter">
+                            <div className="flexcenter">
                                 <div className="form-check">
                                     <input
                                         type="checkbox"
@@ -149,7 +146,7 @@ class Subscription extends React.Component {
                                 to="/add"
                                 className="btn btn-blue col-md-6 m-2 btn-sm mr-5"
                             >
-                                <h4>儲存</h4>
+                                儲存
                             </Link>
                         </div>
                     </div>

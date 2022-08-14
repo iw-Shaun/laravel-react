@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Link } from "react-router-dom";
-import axios from "axios";
 import LOGO from "../../../public/images/c橫式編排.png";
 
 class Create extends React.Component {
@@ -25,7 +24,7 @@ class Create extends React.Component {
 
     render() {
         return (
-            <div className="warp container mt-2">
+            <div className="warp container">
                 <div className="header">
                     <img src={LOGO} alt="" className="logo" />
                     <div className="content mb-4">
@@ -43,7 +42,7 @@ class Create extends React.Component {
                             <h2>新增專案</h2>
                         </div>
 
-                        <div className="container">
+                        <div className="mx-4">
                             {/* 第二行 */}
                             <section className="mt-3">
                                 <div className="input-group mb-3 mr-2">
@@ -67,7 +66,7 @@ class Create extends React.Component {
                                     />
                                     <button
                                         type="submit"
-                                        className="btn btn-primary"
+                                        className="btn btn-pink"
                                     >
                                         新增
                                     </button>
@@ -77,7 +76,7 @@ class Create extends React.Component {
                             {/* 工作內容 */}
                             <div className="mb-3">
                                 <span className="input-group-text">工作類別</span>
-                                <div className="container flexcenter">
+                                <div className="flexcenter">
                                     <div className="form-check">
                                         <input
                                             type="checkbox"
@@ -166,9 +165,9 @@ class Create extends React.Component {
                     <div className="flexcenter mt-3 mb-3">
                         <Link
                             to="/add"
-                            className="btn btn-blue col-md-3 m-2 btn-sm"
+                            className="btn btn-blue col-md-3"
                         >
-                            <h4>送出</h4>
+                            送出
                         </Link>
                     </div>
                 </div>

@@ -8,8 +8,12 @@ use Illuminate\Http\Request;
 class ContactsController extends Controller
 {
     public function index(){
+        $x = 123;
         $contacts = Contact::all();
-        return response()->json($contacts);
+        return response()->json([
+            'contacts' => $contacts,
+            'x' => $x
+        ]);
     }
 
     public function create(Request $request){

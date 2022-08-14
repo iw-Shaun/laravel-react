@@ -18,7 +18,7 @@ class ContactsTableSeeder extends Seeder
         $faker = \Faker\Factory::create();
 
         // 開始建立欄位所需要的假資料參數到資料庫裡
-        for ($i = 0; $i < 10; $i++) {
+        for ($i = 0; $i < 20; $i++) {
             Contact::create([
                 'name' => $faker->name,
                 'tel' => $faker->phoneNumber,

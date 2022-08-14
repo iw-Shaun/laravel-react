@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Link } from "react-router-dom";
-import axios from "axios";
 import LOGO from "../../../public/images/c橫式編排.png";
 
 class ShowAll extends React.Component {
@@ -25,7 +24,7 @@ class ShowAll extends React.Component {
 
     render() {
         return (
-            <div className="warp container mt-2">
+            <div className="warp container">
                 <div className="header">
                     <img src={LOGO} alt="" className="logo" />
                     <div className="content mb-4">

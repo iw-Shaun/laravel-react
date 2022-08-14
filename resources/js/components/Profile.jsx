@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import LOGO from "../../../public/images/c橫式編排.png";
 
 class Profile extends React.Component {
     constructor(props) {
@@ -11,39 +12,21 @@ class Profile extends React.Component {
     }
 
     render() {
-        return (
-            <div className="container mt-4">
-                <div className="row justify-content-center">
-                    <div className="col-md-10">
-                        <div className="card">
-                            <div className="card-header">Main Component</div>
-
-                            <div className="card-body">
-                                <form>
-                                    <div className="mb-3">
-                                        <input
-                                            type="text"
-                                            className="form-control"
-                                        />
-                                    </div>
-                                    <div className="mb-3">
-                                        <input
-                                            type="text"
-                                            className="form-control"
-                                        />
-                                    </div>
-                                    <button
-                                        type="submit"
-                                        className="btn btn-primary"
-                                    >
-                                        Submit
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        return (            
+        <div className="warp container">
+        <div className="header">
+            <img src={LOGO} alt="" className="logo" />
+            <div className="content mb-4">
+                <h1>填報說明</h1>
+                Remember, you should run the npm run dev command each
+                time you change a Vue component. Or, you may run the npm
+                run watch command to monitor and automatically recompile
+                your components each time they are modified.
             </div>
+        </div>
+
+        <div className="col-md-12 mb-4">{/* 按鈕 */}</div>
+    </div>
         );
     }
 }

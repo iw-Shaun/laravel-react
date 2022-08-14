@@ -31,28 +31,26 @@ body {
     height: 100%;
     margin: 0;
 }
-
 section {
     display: flex;
     justify-content: space-between;
 }
-
 select {
     padding: 1%;
 }
-
 textarea {
-    width: 200px;
     min-height: 100px;
     padding: 0;
 }
-
+nav {
+    min-height: 10vh;
+    padding: 0;
+}
 footer {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 7em;
-    // position: absolute;
+    min-height: 15vh;
     bottom: 0;
 }

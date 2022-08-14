@@ -6,7 +6,7 @@ import LOGO from "../../../public/images/LOGO.png";
 class Navbar extends React.Component {
     render() {
         return (
-            <nav className="navbar navbar-expand-lg bg-primary navbar-dark">
+            <nav className="navbar navbar-expand-lg bg-primary navbar-primary">
                 <Link to="/" className="navbar-brand ms-4">
                     <img
                         className="mr-2"

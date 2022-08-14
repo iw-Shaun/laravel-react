@@ -15,15 +15,16 @@ class Test extends React.Component {
         axios
             .get(`/api/contacts`)
             .then((response) => {
+                console.log(response.data.contacts);
                 this.setState({
-                    contacts: response.data,
+                    contacts: response.data.contacts,
                 });
             })
             .catch((error) => console.log(error.response.data));
     }
 
     delete(id, e) {
-        e.preventDefault();
+        // e.preventDefault();
         axios
             .delete(`/api/contact/${id}/delete`)
             .then((response) => {
@@ -36,7 +37,7 @@ class Test extends React.Component {
 
     render() {
         return (
-            <div className="container mt-4">
+            <div className="container">
                 <h1>Test</h1>
                 <table className="table">
                     <thead>
@@ -61,13 +62,15 @@ class Test extends React.Component {
                                           >
                                               edit
                                           </Link>
-                                              <div
-                                                  type="submit"
-                                                  onClick={(e)=>this.delete(contact.id,e)}
-                                                  className="nav-link"
-                                              >
-                                                  Delete
-                                              </div>
+                                          <div
+                                              type="submit"
+                                              onClick={(e) =>
+                                                  this.delete(contact.id, e)
+                                              }
+                                              className="nav-link"
+                                          >
+                                              Delete
+                                          </div>
                                       </td>
                                   </tr>
                               ))

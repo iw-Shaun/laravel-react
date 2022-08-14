@@ -1,13 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Link } from "react-router-dom";
-import axios from "axios";
 import LOGO from "../../../public/images/c橫式編排.png";
 
 class History extends React.Component {
     render() {
         return (
-            <div className="container mt-2">
+            <div className="container">
                 <div className="header">
                     <img src={LOGO} alt="" className="logo" />
                 </div>
