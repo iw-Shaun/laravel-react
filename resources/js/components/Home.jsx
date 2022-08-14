@@ -28,20 +28,20 @@ class Home extends React.Component {
                         <div className="container">
                             {/* 下拉式選單 */}
                             <section className="mt-3 mb-3">
-                                <select className="btn btn-pink col-md-4">
-                                    <option selected>選擇專案</option>
+                                <select className="btn btn-pink col-md-4" defaultValue="0">
+                                    <option value="0">選擇專案</option>
                                     <option value="1">SGK</option>
                                     <option value="2">ALS</option>
                                     <option value="3">VAS</option>
                                 </select>
                                 <select className="btn btn-pink col-md-4">
-                                    <option selected>選擇工作類別</option>
+                                    <option value="0">選擇工作類別</option>
                                     <option value="1">前端</option>
                                     <option value="2">後端</option>
                                     <option value="3">企劃</option>
                                 </select>
                                 <select className="btn btn-pink col-md-4">
-                                    <option selected>選擇進度</option>
+                                    <option value="0">選擇進度</option>
                                     <option value="1">進行中</option>
                                     <option value="2">已完成</option>
                                     <option value="3">Delay</option>

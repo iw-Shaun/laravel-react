@@ -16,25 +16,28 @@ class ContactsController extends Controller
         $contact = Contact::create([
             'name' =>$request->name,
             'tel' =>$request->tel,
+            'address' =>$request->address,
         ]);
-        return response()->jason($contact);
+        return response()->json($contact);
     }
 
     public function edit($id){
         $contact = Contact::find($id);
-        return response()->jason($contact);
+        return response()->json($contact);
     }
 
     public function update(Request $request,$id){
         $contact = Contact::find($id)->update([
             'name' =>$request->name,
             'tel' =>$request->tel,
+            'address' =>$request->address,
         ]);
-        return response()->jason($contact);
+        return response()->json($contact);
     }
 
     public function delete($id){
         $contact = Contact::find($id)->delete();
-        return response()->jason($contact);
+        $contacts = Contact::all();
+        return response()->json($contacts);
     }
 }

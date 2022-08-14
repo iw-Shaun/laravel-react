@@ -17,6 +17,7 @@ class Contacts extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('tel');
+            $table->string('address');
             $table->timestamps();
         });
     }

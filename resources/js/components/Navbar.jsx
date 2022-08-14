@@ -75,11 +75,6 @@ class Navbar extends React.Component {
                                 <Link to="/add" className="nav-link">
                                     add
                                 </Link>
-                            </li> 
-                            <li className="nav-item">
-                                <Link to="/edit" className="nav-link">
-                                    edit
-                                </Link>
                             </li>
                         </ul>
                     </div>

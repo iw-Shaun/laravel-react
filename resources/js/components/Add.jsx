@@ -7,7 +7,48 @@ class Add extends React.Component {
         this.state = {
             name: "",
             tel: "",
+            address: "",
         };
+        this.handleNameInputChange = this.handleNameInputChange.bind(this);
+        this.handleTelInputChange = this.handleTelInputChange.bind(this);
+        this.handleAddressInputChange = this.handleAddressInputChange.bind(this);
+        this.handleFormSubmit = this.handleFormSubmit.bind(this);
+    }
+
+    handleNameInputChange(event) {
+        this.setState({
+            name: event.target.value,
+        });
+    }
+    handleTelInputChange(event) {
+        this.setState({
+            tel: event.target.value,
+        });
+    }
+    handleAddressInputChange(event) {
+        this.setState({
+            address: event.target.value,
+        });
+    }
+
+    handleFormSubmit(event) {
+        event.preventDefault();
+        axios
+            .post(`/api/contact/create`, {
+                name: this.state.name,
+                tel: this.state.tel,
+                address: this.state.address,
+            })
+            .then((response) => {
+                console.log(response);
+                this.setState({
+                    name: "",
+                    tel: "",
+                    address: "",
+                });
+                this.props.history.push(`/test`);
+            })
+            .catch((error) => console.log(error.response.data));
     }
 
     render() {
@@ -20,16 +61,35 @@ class Add extends React.Component {
                             <div className="card-header">Add Component</div>
 
                             <div className="card-body">
-                                <form>
+                                <form onSubmit={this.handleFormSubmit}>
                                     <div className="mb-3">
                                         <input
                                             type="text"
+                                            required
+                                            onChange={
+                                                this.handleNameInputChange
+                                            }
+                                            value={this.state.name}
                                             className="form-control"
                                         />
                                     </div>
                                     <div className="mb-3">
                                         <input
                                             type="text"
+                                            required
+                                            onChange={this.handleTelInputChange}
+                                            value={this.state.tel}
+                                            className="form-control"
+                                        />
+                                    </div>
+                                    <div className="mb-3">
+                                        <input
+                                            type="text"
+                                            required
+                                            onChange={
+                                                this.handleAddressInputChange
+                                            }
+                                            value={this.state.address}
                                             className="form-control"
                                         />
                                     </div>
